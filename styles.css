@@ -1,5 +1,5 @@
 body{
-    font-family: Verdana, sans-serif;
+    font-family: roboto, sans-serif;
     background-color:  #1f2937;
     display: flex;
     flex-direction: column;
@@ -22,10 +22,13 @@ a{
     text-decoration: none;
     color:inherit
 }
+.rightHeader{
+    align-self: center;
+}
 .header{
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     font-size: 24px;
     padding: 30px;
 }
@@ -33,6 +36,7 @@ a{
     font-size: 48px;
     font-weight: 1000;
     color: #f9faf8;
+    margin: 5px;
 }
 .rightHeader,
 #heroSmall{
@@ -44,7 +48,7 @@ a{
     display: flex;
     justify-content: center;
     gap: 150px;
-    margin: auto;
+    flex: auto;
 }
 button{
     background-color: #3882f6;
@@ -55,10 +59,107 @@ button{
     width: 90px;
 }
 button:active{
-    background-color: #1f2937;
+    background-color: inherit;
 }
 #logo{
     width: 100px;
     height: auto;
-    margin: 50px;
+  
+}
+.bird img{
+    width: 150px;
+    height: 150px;
+    border-radius: 20%;
+    border-color:#3882f6;
+    border-style: outset;
+}
+.Info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin-top: 70px;
+    padding: 40px;
+    color: #1f2937;
+    height: 350px;
+    flex: auto;
+}
+.birds{
+    display:flex;
+    justify-content: center;
+    gap:40px;
+}
+#infoText{
+    font-size: 36px;
+    font-weight: 900;
+}
+.bird{
+    display: flex;
+    flex-direction: column;
+}
+.bird p{
+    width:150px;
+    text-align: center;
+}
+.quotes{
+    display: flex;
+    background-color: #e5e7eb;
+    font-size: 36px;
+    font-style:italic;
+    font-weight:lighter;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+    flex:auto;
+    
+}
+.quote{
+    align-self: center;
+    width: 500px;
+}
+.quoteAuthor{
+    align-self: flex-end;
+
+    flex:1;
+}
+.link{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    flex: auto;
+}
+.linkContainter{
+    background-color: #3882f6;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    color:#e5e7eb;
+    height: 100px;
+    width: 600px;
+    font-size: larger;
+    font-weight: 1000;
+}
+.linkContainter p{
+    font-size: medium;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.linkContainter button{
+    border-color: #e5e7eb;
+    border: solid;
+    width: 100px;
+    height: 40px;
+}
+.linkContainter button:active{
+    color: #1f2937;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2937;
+    color: #e5e7eb;
+    height: 50px;
 }
